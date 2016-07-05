@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plane
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="settings.xsd">
+    <model name="Mig-29" modelId="123">
+        <origin>USSR</origin>
+        <chars>
+            <type>fighter</type>
+            <seat_number>2</seat_number>
+            <ammunition_load>
+                <missile_number>3</missile_number>
+            </ammunition_load>
+            <radar>true</radar>
+        </chars>
+        <parameters>
+            <length>17.32</length>
+            <width>11.36</width>
+            <height>4.73</height>
+        </parameters>
+        <price unit="taller">100</price>
+    </model>
+    <model name="F-14" modelId="124">
+        <origin>USA</origin>
+        <chars>
+            <type>fighter</type>
+            <seat_number>2</seat_number>
+            <ammunition_load><missile_number>4</missile_number></ammunition_load>
+            <radar>true</radar>
+        </chars>
+        <parameters>
+            <length>19.1</length>
+            <width>19.45</width>
+            <height>4.88</height>
+        </parameters>
+        <price unit="taller">200</price>
+    </model>
+    <model name="F-18" modelId="125">
+        <origin>USA</origin>
+        <chars>
+            <type>fighter</type>
+            <seat_number>2</seat_number>
+            <ammunition_load>
+                <missile_number>5</missile_number>
+            </ammunition_load>
+            <radar>true</radar>
+        </chars>
+        <parameters>
+            <length>17</length>
+            <width>12</width>
+            <height>4.73</height>
+        </parameters>
+        <price unit="taller">200</price>
+    </model>
+    <model name="EF-2000" modelId="126">
+        <origin>EU</origin>
+        <chars>
+            <type>fighter</type>
+            <seat_number>2</seat_number>
+            <ammunition_load>
+                <missile_number>10</missile_number>
+            </ammunition_load>
+            <radar>true</radar>
+        </chars>
+        <parameters>
+            <length>15.96</length>
+            <width>10.95</width>
+            <height>5.28</height>
+        </parameters>
+        <price unit="taller">300</price>
+    </model>
+</plane>

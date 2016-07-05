@@ -1,0 +1,30 @@
+in order to generate classes from xsd and xml in cmd enter:
+C:\Users\Зая> cd C:\Program Files\Java\jdk1.8.0_91\bin>
+C:\Program Files\Java\jdk1.8.0_91\bin> xjc C:\Users\Зая\IdeaProjects\Epam_Course_Project_3\src\settings.xsd
+
+Коли задаємо environmental variable, то имя переменной: java_home
+значение переменной: "C:\Program Files\Java\jdk1.8.0_91"
+ ""-нужны потому, что Program Files через пробел, чтобы не воспринималось как две комманды
+ _______________________________________________________
+ В результате имеем:
+ C:\Users\Зая\IdeaProjects\Epam_Course_Project_3\src>%java_home%\bin\xjc settings.xsd
+ parsing a schema...
+ compiling a schema...
+ generated\ObjectFactory.java
+ generated\Planes.java
+
+ ______________________________________________________
+ Литература:
+ 1) статья по JAXB:
+ http://devcolibri.com/3372
+
+ 2) статья по SAX парсеру:
+  http://www.quizful.net/post/sax-parser-java
+
+3) статья по validator
+https://docs.oracle.com/javase/7/docs/api/javax/xml/validation/package-summary.html
+
+ ______________________________________________________
+Особенности:
+SAX быстрее, чем DOM. распарсить несклько сот файлов может занять до часа.
+STAX - читать Блинова принцип действия
